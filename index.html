@@ -3,18 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./apiProj_1.css">
-    <title>John Hopkins Covid-19 API</title>
+    
+    <!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link rel="stylesheet" href="./apiProj_1.css">
+
+
+    <title>Covid-19 API</title>
 </head>
+
 <body>
     <div class="wrapper">
-        <h1>John Hopkins Covid-19 API</h1>
 
-        <p>
 
-        </p>
+        <h1>Covid-19 by the Numbers: USA</h1>
+        <p>Figures are sourced from the Center for Systems Science & Engineering (CSSE), John Hopkins University, and updated daily.</p>
+
+        <img src="./apiProj_1_assets/redCross.jpg" alt="Red Cross">
+
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Select a Statistic
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+              <p id="newConfm_dropdown-item" href="#">New Confirmed Cases</p>
+              <div class="dropdown-divider"></div>
+
+              <p id="newDeath_dropdown-item" href="#">New Deaths</p>
+              <div class="dropdown-divider"></div>
+
+              <p id="newRecov_dropdown-item" href="#">New Recovered</p>
+              <div class="dropdown-divider"></div>
+
+              <p id="totConfm_dropdown-item" href="#">Total Confirmed Cases</p>
+              <div class="dropdown-divider"></div>
+
+              <p id="totDeath_dropdown-item" href="#">Total Deaths</p>
+              <div class="dropdown-divider"></div>
+
+              <p id="totRecov_dropdown-item" href="#">Total Recovered</p>
+            </div>
+          </div>
+
+          <div id="jumbotron jumbotron-fluid">
+            <div class="container">
+
+              <h1 id="selectedStat">User's stat will go here</h1>
+
+              <p id="selectedDesc">Brief description of stat will go here</p>
+              
+            </div>
+          </div>
         
     </div>
+    <!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script type="text/javascript" src="apiProj_1.js"></script>
 </body>
+
 </html>

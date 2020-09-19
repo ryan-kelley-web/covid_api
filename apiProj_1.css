@@ -4,4 +4,29 @@ body {
 
 p {
     color: black;
+    margin: 20px;
+}
+
+a {
+    color: darkred;
+    text-decoration: none;
+}
+
+img {
+    height: 25%;
+    width: 25%;
+    margin: 15px;
+    border: 10px solid black;
+}
+
+.dropdown {
+    margin: 40px;
+}
+
+h1 {
+    margin: 20px;
+}
+
+#dropdownMenuButton {
+    color: black;
 }
